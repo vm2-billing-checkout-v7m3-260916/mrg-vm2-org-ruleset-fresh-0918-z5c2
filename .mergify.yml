@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: VM2 inherited org-ruleset freshness Z5C2
+    conditions:
+      - base = main
+      - head = vm2-org-ruleset-z5c2
+      - title = VM2_ORG_RULESET_FRESHNESS_Z5C2
+      - label = vm2-org-policy-go-z5c2
+    actions:
+      merge:
+        method: merge
